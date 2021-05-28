@@ -1,0 +1,18 @@
+<div style=" margin: 3em">
+
+<form action="/api/auth/signin" method="POST">
+    <label >نام کاربری</label>
+    <br>
+    <input type="text" name="username"> 
+    <br>
+    <label >رمز عبور</label>
+    <br>
+    <input type="password" name="password"> 
+    <br>
+    <input type="submit" value="ورود"> 
+    <% if(message !== null){ %> <p><%= message %></p> <% } %>
+</form>
+<p>هنوز ثبت نام نکردید؟
+    <a href="/register"> ثبت نام کنید</a>
+</p>
+</div>

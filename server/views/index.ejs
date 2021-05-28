@@ -1,0 +1,21 @@
+
+<% switch(pageID){  
+    
+     case 'homeAuth': 
+     case 'profile':  
+     case 'dashboard-admin':
+     case 'dashboard-mod':
+     case 'dashboard-user':
+     %>
+    <%- include ('dashboard/index.ejs') %>  
+    <% break;
+  
+    case 'home': 
+     case 'login': 
+     case 'register':
+     %>
+    <%- include ('notAuth/index.ejs') %>  
+    <% break ;
+ 
+} %> 
+ 

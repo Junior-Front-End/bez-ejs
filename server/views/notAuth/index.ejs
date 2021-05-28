@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= siteTitle %> | <%= pageTitle %></title>
+    <link rel='stylesheet' href='css/style.css' />
+  </head>
+  <body style="direction:rtl;margin: 2em;font-size: 1.5em;">
+    <div>
+      <nav>
+        <a class="nav-item" href="/">خانه</a>
+        <a class="nav-item" href="/login">ورود</a>  
+      </nav>
+    </div>
+    <hr/> 
+
+    <% if(pageID == 'login'){ %> 
+      <%- include ('login.ejs') %>  
+    <% } %> 
+
+    <% if(pageID == 'register'){ %> 
+      <%- include ('register.ejs') %>  
+    <% } %> 
+    
+    <% if(pageID == 'home'){ %> 
+      <%- include ('home.ejs') %>  
+    <% } %> 
+
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<div style=" margin: 3em">
+
+<form action="/api/auth/signup" method="POST">
+    <label >نام کاربری</label>
+    <br>
+    <input type="text" name="username"> 
+    <br>
+    <label >ایمیل</label>
+    <br>
+    <input type="email" name="email"> 
+    <br>
+    <label >رمز عبور</label>
+    <br>
+    <input type="password" name="password"> 
+    <br>
+    <label >نقش</label>
+    <br>
+    <select name="role">
+        <option value="user">کاربر</option>
+        <option value="moderator">نویسنده</option>
+        <option value="admin">مدیر </option>
+    </select> 
+    <br> 
+    <input type="submit" value="ثبت نام"> 
+    <% if(message !== null){ %> <p><%= message %></p> <% } %>
+</form>
+<p>قبلا ثبت نام کردید
+        <a href="/login">وارد شوید</a>
+</p> 
+
+</div>

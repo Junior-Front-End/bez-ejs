@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= siteTitle %> | <%= pageTitle %></title>
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body style="direction:rtl;margin: 2em;font-size: 1.5em;">
+    <div>
+      <nav>
+        <a class="nav-item" href="/">خانه</a>
+        <a class="nav-item" href="/dashboard">داشبورد</a>
+        <a class="nav-item" href="/profile">پروفایل</a>
+        <a class="nav-item" href="/signout">خروج</a> 
+      </nav>
+    </div>
+    <hr/>
+
+    <% switch(pageID){ 
+        
+      case 'dashboard-admin': %>
+      <%- include ('admin.ejs') %>  
+      <% break; 
+      
+      case 'dashboard-mod': %>
+      <%- include ('mod.ejs') %>  
+      <% break;
+
+      case 'dashboard-user': %>
+      <%- include ('user.ejs') %>  
+      <% break;  
+  
+      case 'profile': %>
+      <%- include ('profile.ejs') %>  
+      <% break;  
+        
+
+     } %> 
+
+
+    </body>
+</html>
