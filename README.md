@@ -1,9 +1,14 @@
 # <p dir="rtl">ثبت نام و ورود با اکسپرس و مونگو (جونیور فرانت اند)</p>
 
 <div dir="rtl">
-این ریپوسیتوری برای اهداف اموزشی در جونیور فرانت اند تهیه شده است. 
 
 [مقاله مربوطه](https://juniorfrontend.ir/bez-ejs)
+
+این ریپوسیتوری برای اهداف اموزشی در جونیور فرانت اند تهیه شده است. 
+
+
+![](bez-ejs.png)
+![](bez-ejs-2.png)
 
 ## راه اندازی
 
@@ -14,6 +19,7 @@
 از ()[این لینک] اقدام کنید! 
 
 ### 
+
 </div>
 
 ```
@@ -33,22 +39,11 @@ yarn start
 4. امکان ثبت نام وجود دارد.
 5. امکان ورود وجود دارد.
 
-## میتواند با این کارها بهبود یابد
+## گام های بعدی 
 
 1. رمزنگاری دیتابیس
 2. داشبورد اختصاصی برای هر نقش
 3. امکان گذاشتن پست و حذف پست و ویرایش آن در داشبورد
 4. امکان تغییر رمز عبور در پروفایل یا داشبورد
-
-## ارور های ejs
-
-[لیست کامل ارور هایی که به آن بر خوردم به همراه راه حل
-](README/ejs.md)
-
-## منابع 
-
-1. [bezkoder.com/node-js-mongodb-auth-jwt](https://bezkoder.com/node-js-mongodb-auth-jwt)
-2. [bezkoder.com/react-jwt-auth](https://bezkoder.com/react-jwt-auth/)
-3. [x-access-token](https://stackoverflow.com/questions/59006690/how-store-header-x-access-token-value-after-login-so-that-all-routes-can-benefi)
 
 </div>
